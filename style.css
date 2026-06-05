@@ -91,6 +91,14 @@ nav {
   z-index: 200;
 }
 .dropdown:hover .dropdown-menu { display: block; }
+.dropdown-menu::before {
+  content: '';
+  position: absolute;
+  top: -12px;
+  left: 0;
+  right: 0;
+  height: 12px;
+}
 .dropdown-menu a {
   display: block;
   padding: 9px 14px;
